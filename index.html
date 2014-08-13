@@ -1,0 +1,31 @@
+<body>
+
+<link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  pre { word-wrap: normal; padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border-radius: 3px;
+    border-style: none }
+  a { color: black }
+</style>
+<div class="container">
+  <div class="page-header">
+    <h1>Bookmarklets</h1><small>A collection of short javascript scripts, you can launch from your bookmarks bar.</small>
+  </div>
+  <div class="page-body">
+    <p>You can drag any one of these headers into your bookmarks bar to save them.</p>
+    <article>
+      <h3><a href='javascript: var gh = window.location.pathname.split("/"); window.location.href = "http://" + gh[1] + ".github.io/" + gh[2]' title="Open gh-pages index">Open gh-pages index</a></h3>
+      <pre>var gh = window.location.pathname.split("/"); window.location.href = "http://" + gh[1] + ".github.io/" + gh[2]</pre>
+    </article>
+    <article>
+      <h3><a href='javascript: var gh = window.location.pathname.split("/"); window.location.href = "http://" + gh[1] + ".github.io/" + gh[2] + "/" + gh.slice(5).join("/")' title="Open current resource in gh-pages">Open current resource in gh-pages</a></h3>
+      <pre>var gh = window.location.pathname.split("/"); window.location.href = "http://" + gh[1] + ".github.io/" + gh[2] + "/" + gh.slice(5).join("/")</pre>
+    </article>
+  </div>
+</div>
+
+</body>
